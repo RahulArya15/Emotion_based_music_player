@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href="{{ url_for('static', filename='style/welcome.css') }}">
+    </head>
+  <body>
+        <h1>Look here</h1>
+        <img src="{{ url_for('video_feed') }}" class="center">
+        <br>
+        <form action="/songs" method='post'>
+            <input type="submit" name = "happy" value="Happy">
+            <input type="submit" name = "neutral" value="Neutral">
+            <input type="submit" name = "sad" value="sad">
+            <input type="submit" value="Play songs">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+   <head>
+    <link rel = "stylesheet" href="{{ url_for('static', filename=emotion) }}">
+   </head>
+    <body>
+        <h1>{{type}} songs</h1>
+        <h1>{{song}}</h1>
+        <audio controls = "controls" autoplay>
+            <source src = "{{dir + '/' + song}}" type = "audio/mpeg">
+        </audio>
+        <br>
+        <br>
+        <form action="/songs" method='post'>
+            <input type="submit" name="previous" value="previous">
+            <input type="submit" name="next" value="Next">
+        </form>
+        <form action="/">
+            <input type="submit" value="home">
+        </form>
+        
+    </body>
+</html>

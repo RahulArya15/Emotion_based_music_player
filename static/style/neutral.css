@@ -1,0 +1,14 @@
+body
+{
+    background-image: url('neutral.jpg');
+    background-size: cover;
+    text-align: center;
+}
+input[type=submit]
+{
+    background-color: rgb(177, 182, 185);
+    color: black;
+    padding: 4px 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
